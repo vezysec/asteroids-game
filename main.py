@@ -13,12 +13,16 @@ def main():
 
     ### Game Loop
     while True:
+        ## log game state for debugging
+        log_state()
         ## check Player input
-        
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                return
         ## update Game world
 
         ## Draw Game State
-        log_state()
+        
         screen.fill("black")
         pygame.display.flip()
 
