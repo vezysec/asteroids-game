@@ -25,6 +25,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
         ## update Game world
+        player.update(dt)
 
         ## Draw Game State
         
